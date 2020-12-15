@@ -1,7 +1,7 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
+        "title": "ADR Virtual Bike Challenge 2020",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
 
     },
@@ -112,7 +112,7 @@
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },
-    "Features": [{
+    "Events": [{
             "icon": "fa fa-comments-o",
             "title": "Lorem ipsum",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
