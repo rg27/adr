@@ -32,12 +32,6 @@ const Events = (props) => {
                             <li>
                             <Link to="/registration"><button>Register</button></Link>
                             </li>
-                            <li>
-                              {/* <Link to="/about">About</Link> */}
-                            </li>
-                            <li>
-                              {/* <Link to="/dashboard">Dashboard</Link> */}
-                            </li>
                           </ul>
                           <Switch>
                             <Route exact path="/registration">
