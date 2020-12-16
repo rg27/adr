@@ -135,28 +135,13 @@
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },
-    "Events": [{
-            "id":1,
-            "img": "img/team/01.jpg",
-            "eventName": "Leg1",
-            "address": "3rd Ave NE Brainerd, Minnesota(MN), 56401"
-        },
-        {
-            "id":2,
-            "img": "img/team/02.jpg",
-            "eventName": "Leg2",
-            "address": "King Jr DrMontezuma, Georgia(GA), 31063"
-        }, {
-            "id":3,
-            "img": "img/team/03.jpg",
-            "eventName": "Leg3",
-            "address": "3rd LnAndover, New Hampshire(NH), 03216"
-        },
+    "Events": [
         {
             "id":4,
-            "img": "img/team/04.jpg",
-            "eventName": "Leg4",
-            "address": "Knox Ave Vine Grove, Kentucky(KY), 40175"
+            "img": "img/team/01.jpg",
+            "eventName": "Leg 4",
+            "address": "3rd Ave NE Brainerd, Minnesota(MN), 56401"
         }
+      
     ]
 }

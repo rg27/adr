@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
- 
-
+import Registration from './registration.jsx';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const Events = (props) => {
-
-  const [open, setOpen] = useState(false);
- 
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
 
     return (
       <div id="events" className="text-center">
@@ -26,10 +24,28 @@ const Events = (props) => {
                       <div className="caption">
                         <h4>{d.eventName}</h4>
                         <p>{d.address}</p>
-                        <button onClick={onOpenModal}>Register</button>
-                        <Modal open={open} onClose={onCloseModal} center>
-                          <h2>Simple centered modal</h2>
-                        </Modal>
+                       {/* <a href='https://www.freecodecamp.org/'><button>Register</button></a> */}
+                       <Router>
+                        <div>
+                      
+                          <ul>
+                            <li>
+                            <Link to="/registration"><button>Register</button></Link>
+                            </li>
+                            <li>
+                              {/* <Link to="/about">About</Link> */}
+                            </li>
+                            <li>
+                              {/* <Link to="/dashboard">Dashboard</Link> */}
+                            </li>
+                          </ul>
+                          <Switch>
+                            <Route exact path="/registration">
+                              <Registration />
+                            </Route>
+                          </Switch>
+                        </div>
+                        </Router>
                       </div>
                     </div>
                   </div>
