@@ -104,6 +104,29 @@
             "job": "Project Manager"
         }
     ],
+
+    "Teams": [{
+        "img": "img/team/01.jpg",
+        "name": "John Doe",
+        "job": "Director"
+    },
+    {
+        "img": "img/team/02.jpg",
+        "name": "Mike Doe",
+        "job": "Senior Designer"
+    }, {
+        "img": "img/team/03.jpg",
+        "name": "Jane Doe",
+        "job": "Senior Designer"
+    },
+    {
+        "img": "img/team/04.jpg",
+        "name": "Karen Doe",
+        "job": "Project Manager"
+    }
+],
+
+
     "Contact": {
         "address": "4321 California St, San Francisco, CA 12345 ",
         "phone": "+1 123 456 1234",
@@ -113,24 +136,27 @@
         "youtube": "youtube.com"
     },
     "Events": [{
-            "icon": "fa fa-comments-o",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "id":1,
+            "img": "img/team/01.jpg",
+            "eventName": "Leg1",
+            "address": "3rd Ave NE Brainerd, Minnesota(MN), 56401"
         },
         {
-            "icon": "fa fa-bullhorn",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "id":2,
+            "img": "img/team/02.jpg",
+            "eventName": "Leg2",
+            "address": "King Jr DrMontezuma, Georgia(GA), 31063"
+        }, {
+            "id":3,
+            "img": "img/team/03.jpg",
+            "eventName": "Leg3",
+            "address": "3rd LnAndover, New Hampshire(NH), 03216"
         },
         {
-            "icon": "fa fa-group",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        },
-        {
-            "icon": "fa fa-magic",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "id":4,
+            "img": "img/team/04.jpg",
+            "eventName": "Leg4",
+            "address": "Knox Ave Vine Grove, Kentucky(KY), 40175"
         }
     ]
 }
