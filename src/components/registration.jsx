@@ -26,10 +26,11 @@ const Attendance = () => {
     shippingAddress:"",
     country:"",
     preferredModeOfPayment:"",
+    packageName:""
   
   });
 
-  const {firstName,lastName,birthdate, gender, facebookName,team,bibName,category, shirtSize,contactNumber,emailAddress, shippingAddress, country, preferredModeOfPayment} = data;
+  const {firstName,lastName,birthdate, gender, packageName,facebookName,team,bibName,category, shirtSize,contactNumber,emailAddress, shippingAddress, country, preferredModeOfPayment} = data;
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value})
@@ -49,12 +50,12 @@ const handleSubmit = async (e) => {
           'Content-Type':'application/json'
         },
         body: JSON.stringify([
-          [firstName,lastName,birthdate, gender, facebookName,team,bibName,category, shirtSize,contactNumber,emailAddress, shippingAddress, country, preferredModeOfPayment, new Date().toLocaleString()],
+          [firstName,lastName,birthdate, gender, facebookName,team,bibName,category, shirtSize,contactNumber,emailAddress, shippingAddress, country, preferredModeOfPayment, new Date().toLocaleString(), packageName],
         ]),
     }
   );
     await response.json();
-    setData({ ...data, firstName: "", lastName: "",birthdate: "", gender: "",facebookName: "",team: "",contactNumber:"", category: "", bibName: "",shirtSize: "", emailAddress: "",shippingAddress: "", country: "" , preferredModeOfPayment: ""});
+    setData({ ...data, firstName: "", lastName: "",birthdate: "",packageName: "", gender: "",facebookName: "",team: "",contactNumber:"", category: "", bibName: "",shirtSize: "", emailAddress: "",shippingAddress: "", country: "" , preferredModeOfPayment: ""});
   }catch(err){
     console.log(err)
   }
@@ -179,6 +180,15 @@ return (
               <option value="Medium">Medium</option>
               <option value="Large">Large</option>
               <option value="XL">XL</option>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Input type='select' required  value={packageName}   onChange={handleChange}   name="packageName" id="examplepackageName">
+              <option  value=" ">--Choose Package--</option>
+              <option value="Standard">Standard</option>
+              <option value="Deluxe">Deluxe</option>
+              <option value="Premium">Premium</option>
             </Input>
           </FormGroup>
 
