@@ -10,7 +10,7 @@ import {
   Input,
 } from 'reactstrap';
 
-const Registration = () => {
+const Attendance = () => {
   const [data, setData] = useState ({
     firstName:"",
     lastName:"",
@@ -32,16 +32,17 @@ const Registration = () => {
   const {firstName,lastName,birthdate, gender, facebookName,team,bibName,category, shirtSize,contactNumber,emailAddress, shippingAddress, country, preferredModeOfPayment} = data;
 
   const handleChange = e => {
-    setData({ ...data, [e.target.firstName]: e.target.value})
+    setData({ ...data, [e.target.name]: e.target.value})
   }
  
 const handleSubmit = async (e) => {
   e.preventDefault();
   alert("Successfully submitted👍");
+  window.location.href = "/";
   
   try{
     const response = await fetch(
-      "https://v1.nocodeapi.com/rey12/google_sheets/yWPHjskMaMqrPOOb?tabId=Sheet1",
+      "https://v1.nocodeapi.com/rey12/google_sheets/zdcehjxeDCSAzqho?tabId=Raw",
       {
         method:'POST',
         headers:{
@@ -53,7 +54,7 @@ const handleSubmit = async (e) => {
     }
   );
     await response.json();
-    setData({ ...data, firstName: "", lastName: "",birthdate: "",facebookName: "",team: "", bibName: "",category: "", bibName: "",shirtSize: "", emailAddress: "",shippingAddress: "", country: "" , preferredModeOfPayment: ""});
+    setData({ ...data, firstName: "", lastName: "",birthdate: "", gender: "",facebookName: "",team: "",contactNumber:"", category: "", bibName: "",shirtSize: "", emailAddress: "",shippingAddress: "", country: "" , preferredModeOfPayment: ""});
   }catch(err){
     console.log(err)
   }
@@ -65,7 +66,7 @@ return (
     <div className="d-flex align-items-center">
       <Form className="attendanceform" onSubmit={handleSubmit}>
           <hr/>
-          <h3>Leg 4 Registration Form</h3>
+          <h3>Leg 4 Attendance Form</h3>
           <FormGroup >
             <Input 
               required
@@ -237,4 +238,4 @@ return (
   );
 };
 
-export default Registration;
+export default Attendance;
