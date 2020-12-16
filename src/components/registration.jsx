@@ -66,7 +66,7 @@ return (
     <div className="d-flex align-items-center">
       <Form className="attendanceform" onSubmit={handleSubmit}>
           <hr/>
-          <h3>Leg 4 Attendance Form</h3>
+          <h3>Leg 4 Registration Form</h3>
           <FormGroup >
             <Input 
               required
@@ -186,7 +186,7 @@ return (
           <FormGroup >
             <Input 
               required
-              type="number" 
+              type="text" 
               name="contactNumber" 
               className="attinputClass"
               placeholder="Contact Number"
