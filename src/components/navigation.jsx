@@ -33,7 +33,7 @@ export class Navigation extends Component {
                   Events
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="about" className="page-scroll">
                   About
                 </a>
@@ -47,7 +47,7 @@ export class Navigation extends Component {
                 <a href="contact" className="page-scroll">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
