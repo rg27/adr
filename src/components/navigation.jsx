@@ -33,6 +33,11 @@ export class Navigation extends Component {
                   Events
                 </a>
               </li>
+              <li>
+                <a href="#dashboard" className="page-scroll">
+                  Dashboard
+                </a>
+              </li>
               {/* <li>
                 <a href="about" className="page-scroll">
                   About
