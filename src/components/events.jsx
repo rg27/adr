@@ -23,9 +23,9 @@ const Events = (props) => {
                       <img src={d.img} alt="..." className="team-img" />
                       <div className="caption">
                         <h4>{d.eventName}</h4>
-                        <p>{d.address}</p>
+                        {/* <p>{d.address}</p> */}
                        {/* <a href='https://www.freecodecamp.org/'><button>Register</button></a> */}
-                       <Router>
+                       {/* <Router>
                         <div>
                       
                           <ul>
@@ -39,7 +39,14 @@ const Events = (props) => {
                             </Route>
                           </Switch>
                         </div>
-                        </Router>
+                        </Router> */}
+                           <a
+                              href="https://docs.google.com/forms/d/e/1FAIpQLSc5Xb4G25Nx5o_CUvXlkaoRRgbG5rNivZ97DQ3R9bA2laz8YA/viewform"
+                              className="btn btn-custom btn-lg "
+                              target="_blank"
+                            >
+                              Register
+                            </a>{" "}
                       </div>
                     </div>
                   </div>
